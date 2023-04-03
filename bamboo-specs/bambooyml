@@ -8,12 +8,12 @@ plan:
         jobs:
           - name: Build
             tasks:
-              - script: echo " Running Script1 in Job1."
-              - script: echo " Running Script2 in Job1."
+              - script: echo " Running Script1 in Job1 and added file online."
+              - script: echo " Running Script2 in Job1 and added file online."
           - name: Test
             tasks:
-              - script: echo " Running Script1 in Job2."
-              - script: echo " Running Script2 in Job2."
+              - script: echo " Running Script1 in Job2 and added file online."
+              - script: echo " Running Script2 in Job2 and added file online."
       - name: Production
         jobs:
           - name: Deploy to Staging
